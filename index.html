@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- ============ nav start ========== -->
     <nav>
         <span id="menubtn" class="material-symbols-outlined">
           menu
@@ -15,10 +16,13 @@
         <label class="logo">ZenFlavor</label>
         <ul>
           <li><a class="active" href="#home">home</a></li>
-          <li><a href="#menu">menu</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a class="active" href="#menu">menu</a></li>
+          <li><a class="active" href="#discount">discount</a></li>
+          <li><a class="active" href="#contact">contact</a></li>
         </ul>
       </nav>
+      <!-- ========== nav end ============ -->
+      <!-- =========== home start =========== -->
       <section class="home" id="home">
         <div class="name">
           <span class="char">Z</span>
@@ -67,6 +71,9 @@
         </div>
         <p>Flavors of Tranquility at ZenFlavor.</p>
       </section>
+      <!-- ============ home end ============ -->
+
+      <!-- ========== menu start ========= -->
       <section id="menu" class="menu">
         <div class="text">
           <hr>
@@ -118,6 +125,9 @@
           </li>
         </ul>
       </section>
+      <!-- =========== menu end =========== -->
+
+      <!-- ========== discount start ========= -->
       <section class="discount" id="discount">
         <h1>Discount</h1>
         <button id="discountbtn">Try your luck</button>
@@ -126,11 +136,14 @@
           <span class="discount-span" id="rightanimate"></span>
         </div>
         <div class="under-text" >
-          <span class="message">congratulation you get <span>10%</span> of discount</span>
+          <span class="message">congratulation you get <span id="percentage">10%</span> of discount</span>
           <span id="discode">08hd8hw</span>
         </div>
         
       </section>
+      <!-- ========== discount end ======= -->
+
+      <!-- ========= footer start ======= -->
       <footer>
         <div class="contact">
           <p>Contact us</p>
@@ -146,22 +159,9 @@
         <hr>
         <p>&copy; 2023 ZenFlavor Restaurant. All rights reserved.</p>
       </footer>
+      <!-- ========= footer end ======= -->
 
-      <script>
-        const menubtn=document.getElementById("menubtn");
-        const discountbtn=document.getElementById("discountbtn");
-
-        menubtn.addEventListener("click",()=>{
-          document.querySelector("ul").classList.toggle("toggle");
-        })
-        discountbtn.addEventListener("click",()=>{
-          discountbtn.innerText="congratulation"
-          discountbtn.style.backgroundColor="rgb(247, 137, 12)";
-          discountbtn.style.color="white";
-          document.getElementById("leftanimate").style.width=0;
-          document.getElementById("rightanimate").style.width=0;
-
-        })
-      </script>
+      <!-- ====== script sec ====== -->
+      <script src="script.js"></script>
 </body>
 </html>

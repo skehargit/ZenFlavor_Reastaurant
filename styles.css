@@ -8,30 +8,36 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0)!important;
     -webkit-focus-ring-color:rgba(255,255,255,0);
     outline: none !important;
-    
+}
+:root{
+  --yello--:rgb(247, 137, 12);
 }
 body{
-  /* background-color: #333; */
   background: url('img/bg.jpg');
   color: white;
   font-family: sans-serif;
 }
+section {
+  margin: auto;
+  padding: 20px;
+  max-width: 1000px;
+  border: 2px solid var(--yello--);
+  border-top: none;
+  border-bottom: none;
+}
+/* ========= nav start ======= */
 nav{
   background-color: transparent;
   position: absolute;
-  
   color: rgb(255, 255, 255);
   height: 50px;
   width: 100%;
-
 }
-
 label.logo{
   font-size: 1.5rem;
   line-height: 50px;
   padding: 0 10px;
   font-weight: bold;
-
 }
 nav ul{
   float: right;
@@ -46,11 +52,10 @@ nav ul li a{
   font-size: 15px;
   border-radius: 10px;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 30px;
 }
-a.active,a:hover{
-  background-color: rgb(247, 137, 12);
-  
+a:hover{
+  background-color: var(--yello--);
 }
 #menubtn{
   float: right;
@@ -73,28 +78,29 @@ a.active,a:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
     z-index: 10;
-    background: rgba(255, 8, 8, 0.646);
+    background: rgb(255, 255, 255);
     height: 100vh;
     left: 0;
     transition: all .5s;
   }
+  a.active{
+    color: black;
+  }
+
   nav ul li{
     display: block;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+  }
+  nav ul li:hover{
+    background:var(--yello--) ;
+
   }
 }
-section {
-    margin: auto;
-  padding: 20px;
-  max-width: 1000px;
-  border: 2px solid rgb(247, 137, 12);
-  border-top: none;
-  border-bottom: none;
-  /* background: url('img/bg.jpg');
-  background-size: cover;
-  background-position: center; */
-}
+/* ====== nav end =========== */
+
 /* ======== home start ============ */
 .home{
   overflow: hidden;
@@ -122,7 +128,7 @@ section {
   font-family: 'Londrina Solid', sans-serif;
 }
 .home .char:hover{
-    color: rgb(247, 137, 12);
+    color: var(--yello--);
     cursor: pointer;
 }
 .home .char:nth-child(1){
@@ -183,7 +189,7 @@ section {
   }
 }
 hr{
-  border: 5px solid rgb(247, 137, 12);
+  border: 5px solid var(--yello--);
   width: 50%;
   max-width: 500px;
   margin: auto;
@@ -198,7 +204,7 @@ hr{
     justify-content: space-between;
 }
 .iconanimation span{
-    color: rgb(247, 137, 12);
+    color: var(--yello--);
     font-size: 5rem;
 }
 .iconanimation span:nth-child(1){
@@ -273,7 +279,7 @@ hr{
   }
 }
 .timing{
-    border: 2px solid rgb(247, 137, 12);
+    border: 2px solid var(--yello--);
     border-top: none;
     border-bottom: none;
     width: 100%;
@@ -291,7 +297,7 @@ hr{
 }
 .openclose{
     font-size: 1.2rem;
-    color: rgb(247, 137, 12);
+    color: var(--yello--);
     font-weight: bold;
     font-family: sans-serif;
     text-transform: uppercase;
@@ -301,7 +307,7 @@ hr{
     text-align: end;
 }
 .ampm{
-    color: rgb(247, 137, 12);
+    color: var(--yello--);
 }
 .timing .time{
     font-size: 5rem;
@@ -368,7 +374,7 @@ hr{
     margin: 10px;
 }
 .menu ul li hr{
-    border: 1px solid rgb(247, 137, 12);
+    border: 1px solid var(--yello--);
     width: 100%;
     margin-bottom: 5px;
     transition: 3s;
@@ -378,7 +384,7 @@ hr{
     width: 10%;
 }
 .menu ul li div:nth-child(1){
-    color: rgb(247, 137, 12);
+    color: var(--yello--);
     font-weight: bold;
     text-transform: uppercase;
     font-family: sans-serif;
@@ -405,11 +411,6 @@ hr{
     background: url('img/bg.jpg');
     background-size: cover;
     background-position: center;
-    /* border-top: 1px solid white; */
-    /* border: 2px solid white; */
-    /* border-bottom: none;s */
-    /* border-left: none;
-    border-right: none; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -419,9 +420,9 @@ hr{
     text-transform: uppercase;
 }
 .discount-box{
-    width: 80%;
+    width: 90%;
     max-width: 750px;
-    border: 2px solid rgb(247, 137, 12);
+    border: 2px solid var(--yello--);
     overflow: hidden;
     border-radius: 10px;
     height: 100px;
@@ -431,7 +432,7 @@ hr{
     margin: auto;
 }
 .discount-span{
-    background: rgb(247, 137, 12);
+    background: var(--yello--);
     height: 100%;
     width: 50%;
     z-index: 1;
@@ -447,10 +448,10 @@ hr{
     z-index: 3;
     cursor: pointer;
     transition: 1s;
-    color: rgb(247, 137, 12);
+    color: var(--yello--);
 }
 #discountbtn:hover{
-    background-color: rgb(247, 137, 12);
+    background-color: var(--yello--);
     color: white;
 }
 .under-text{
@@ -463,24 +464,31 @@ hr{
     justify-content: center;
 }
 .under-text .message{
-    font-size: .8rem;
+    font-size: 1.5rem;
     padding: 10px 0;
 }
+@media (max-width:500px) {
+  .under-text .message{
+    font-size: .9rem;
+  }
+}
 .under-text .message span{
-    color: rgb(247, 137, 12);
+    color: var(--yello--);
 }
 #discode{
-    color: rgb(247, 137, 12);
+    color: var(--yello--);
 }
 #leftanimate,#rightanimate{
     transition: 4s;
 }
+/* ========== discount end ========= */
 
+/* =========== footer start =========== */
 footer {
  max-width: 1000px;
  margin: auto;
   background: url('img/bg.jpg');
-  border: 2px solid rgb(247, 137, 12);
+  border: 2px solid var(--yello--);
   display: flex;
   flex-direction: column;
   color: white;
@@ -488,7 +496,7 @@ footer {
   padding: 1em;
 }
 footer hr{
-    border: 2px solid rgb(247, 137, 12) ;
+    border: 2px solid var(--yello--) ;
 }
 footer p{
     padding: 5px 0;
@@ -503,4 +511,6 @@ footer a{
 }
 .payment-methods img{
     width: 50px;
-}    
+}   
+
+/* ===== footer end =========== */
