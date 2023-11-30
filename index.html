@@ -4,18 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZenFlavor | Savor the Moment, Taste the ZenFlavor</title>
-    <!-- "Flavors of Tranquility at ZenFlavor." -->
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About Us</a>
-        <a href="#reservations">Reservations</a>
-        <a href="#events">Events</a>
-        <a href="#contact">Contact Us</a>
+        <span id="menubtn" class="material-symbols-outlined">
+          menu
+        </span>
+        <label class="logo">ZenFlavor</label>
+        <ul>
+          <li><a class="active" href="#home">home</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
       </nav>
-      
+      <section class="home" id="home">
+        <div class="name">
+          <span class="char">Z</span>
+          <span class="char">E</span>
+          <span class="char">N</span>
+          <span class="char">F</span>
+          <span class="char">L</span>
+          <span class="char">A</span>
+          <span class="char">V</span>
+          <span class="char">O</span>
+          <span class="char">R</span>
+        </div>
+        <p>Savor the Moment, Taste the ZenFlavor.</p>
+        <div class="iconanimation">
+          <span class="material-symbols-outlined">
+            filter_hdr
+          </span>
+          <span class="material-symbols-outlined">
+            skillet
+          </span>  
+        </div>
+        <hr>
+        <div class="middlePlate">
+          <span>
+            <img id="rotateimg" src="img/food-1.png" alt="">
+            <img id="fixedimg" src="img/food-1.png" alt="">
+          </span>
+        </div>
+        <hr>
+        <div class="timing">
+          <span class="leftrightTime">
+            <span class="openclose">open</span>
+            <span>
+              <span class="time">08</span>
+              <span class="ampm">AM</span>
+            </span>
+            
+          </span>
+          <span class="leftrightTime">
+            <span class="openclose end">close</span>
+            <span>
+              <span class="time">10</span>
+              <span class="ampm">PM</span>
+            </span>
+          </span>
+        </div>
+        <p>Flavors of Tranquility at ZenFlavor.</p>
+      </section>
+      <section id="menu" class="menu">
+        <div class="text">
+          <hr>
+          <div class="menutext">
+            <span>THE</span>
+            <div class="name">
+              <span class="char">M</span>
+              <span class="char">E</span>
+              <span class="char">N</span>
+              <span class="char">U</span>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <ul>
+          <li>
+            <div>SOUP</div>
+            <hr>
+            <div><span>Hot & Sour</span><span>Rs. 80</span></div>
+            <div><span>Veg Machow</span><span>Rs. 80</span></div>
+            <div><span>Sweet Corn Soup</span><span>Rs. 90</span></div>
+          </li>
+          <li>
+            <div>NON VEG SOUP</div>
+            <hr>
+            <div><span>Chicken Hot & Soup</span><span>Rs. 110</span></div>
+            <div><span>Chicken Machow Soup</span><span>Rs. 110</span></div>
+            <div><span>Chicken Sweet Corn Soup</span><span>Rs. 120</span></div>
+          </li>
+          <li>
+            <div>TANDOORI SNACKS</div>
+            <hr>
+            <div><span>Paneer Tikka</span><span>Rs. 150</span></div>
+            <div><span>Tandoori Chaap</span><span>Rs. 180</span></div>
+            <div><span>hara bhara kabab(8 pcs)</span><span>Rs. 160</span></div>
+            <div><span>Chicken Tikka(8 pcs)</span><span>Rs. 210</span></div>
+            <div><span>Tandoori Chicken</span><span>Rs. 260</span></div>
+            <div><span>Chicken Wings(8 pcs)</span><span>Rs. 200</span></div>
+            <div><span>hMurg malai Tikka(8 pcs)</span><span>Rs. 260</span></div>
+          </li>
+          <li>
+            <div>CHINESE STARTERS</div>
+            <hr>
+            <div><span>Veg. Spring Rolls</span><span>Rs. 140</span></div>
+            <div><span>Honey Chilly Potato</span><span>Rs. 150</span></div>
+            <div><span>Crispy Com</span><span>Rs. 180</span></div>
+            <div><span>Veg. Manchurian Dry</span><span>Rs. 180</span></div>
+            <div><span>Chicken Lolipop(12 pcs)</span><span>Rs. 280</span></div>
+          </li>
+        </ul>
+      </section>
+      <section class="discount" id="discount">
+        <h1>Discount</h1>
+        <button id="discountbtn">Try your luck</button>
+        <div class="discount-box">
+          <span class="discount-span" id="leftanimate"></span>
+          <span class="discount-span" id="rightanimate"></span>
+        </div>
+        <div class="under-text" >
+          <span class="message">congratulation you get <span>10%</span> of discount</span>
+          <span id="discode">08hd8hw</span>
+        </div>
+        
+      </section>
+      <footer>
+        <div class="contact">
+          <p>Contact us</p>
+          <p>Email: <a href="mailto:info@zenflavor.com">info@zenflavor.com</a></p>
+          <p>Phone: +1 (555) 123-4567</p>
+        </div>
+        <hr>
+        <div class="payment-methods">
+          <img src="img/visa.png" alt="Visa">
+          <img src="img/master-card.png" alt="Mastercard">
+          <img src="img/PayPal.png" alt="PayPal">
+        </div>
+        <hr>
+        <p>&copy; 2023 ZenFlavor Restaurant. All rights reserved.</p>
+      </footer>
+
+      <script>
+        const menubtn=document.getElementById("menubtn");
+        const discountbtn=document.getElementById("discountbtn");
+
+        menubtn.addEventListener("click",()=>{
+          document.querySelector("ul").classList.toggle("toggle");
+        })
+        discountbtn.addEventListener("click",()=>{
+          discountbtn.innerText="congratulation"
+          discountbtn.style.backgroundColor="rgb(247, 137, 12)";
+          discountbtn.style.color="white";
+          document.getElementById("leftanimate").style.width=0;
+          document.getElementById("rightanimate").style.width=0;
+
+        })
+      </script>
 </body>
 </html>
