@@ -23,7 +23,7 @@ section {
   max-width: 1000px;
   border: 2px solid var(--yello--);
   border-top: none;
-  border-bottom: none;
+  /* border-bottom: none; */
 }
 /* ========= nav start ======= */
 nav{
