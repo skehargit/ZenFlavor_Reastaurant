@@ -12,6 +12,9 @@
 :root{
   --yello--:rgb(247, 137, 12);
 }
+.yellow{
+  color: var(--yello--);
+}
 body{
   background: url('img/bg.jpg');
   color: white;
@@ -79,20 +82,19 @@ a:hover{
     justify-content: center;
     flex-direction: column;
     z-index: 10;
-    background: rgb(255, 255, 255);
+    background: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     left: 0;
+    top: 0;
     transition: all .5s;
   }
-  a.active{
-    color: black;
-  }
-
   nav ul li{
     display: block;
     width: 200px;
     text-align: center;
-    background-color: white;
+    color: white;
   }
   nav ul li:hover{
     background:var(--yello--) ;
@@ -365,7 +367,7 @@ hr{
     max-width: 750px;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 .menu ul li{
     border: 2px solid white;
@@ -397,11 +399,14 @@ hr{
 .menu ul li div span{
     margin: 5px 0;
     font-family: sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
 }
-@media (max-width:500px) {
-    .menu ul{
-        grid-template-columns: repeat(1,1fr);
-    }
+.menu ul li div span img{
+  width: 15px;
+  /* padding: 0 5px; */
+  margin: 0 5px;
 }
 
 /* ============ menu end ======== */
@@ -434,7 +439,7 @@ hr{
 .discount-span{
     background: var(--yello--);
     height: 100%;
-    width: 50%;
+    width: 55%;
     z-index: 1;
 }
 #discountbtn{
@@ -472,14 +477,14 @@ hr{
     font-size: .9rem;
   }
 }
-.under-text .message span{
-    color: var(--yello--);
-}
-#discode{
-    color: var(--yello--);
-}
 #leftanimate,#rightanimate{
     transition: 4s;
+}
+.discount p{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1rem;
+  padding: 5px;
 }
 /* ========== discount end ========= */
 
@@ -489,6 +494,7 @@ footer {
  margin: auto;
   background: url('img/bg.jpg');
   border: 2px solid var(--yello--);
+  border-top: none;
   display: flex;
   flex-direction: column;
   color: white;
