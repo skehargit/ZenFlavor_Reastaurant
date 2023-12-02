@@ -41,6 +41,10 @@ label.logo{
   line-height: 50px;
   padding: 0 10px;
   font-weight: bold;
+  transition: 1s;
+}
+label.logo:hover{
+  color: var(--yello--);
 }
 nav ul{
   float: right;
